@@ -9,7 +9,7 @@ public class LaunchBrowserTest {
 
     @Test(testName = "chrome")
     public void browserLaunch() throws InterruptedException {
-        System.out.println("chromeTest execution");
+        System.out.println("TEST chromeTest execution");
     }
 
 }

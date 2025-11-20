@@ -31,11 +31,16 @@ public class LaunchBrowser {
 
     @Test(testName = "chrome")
     public void browserLaunch() throws InterruptedException {
-        System.out.println("chrome execution");
+        System.out.println("TEST chrome execution");
+    }
+
+    @Test(testName = "safari")
+    public void browserLaunchSafari() throws InterruptedException {
+        System.out.println("TEST safari execution");
     }
 
     @Test(testName = "chrome")
     public void browserLaunchFirefox() throws InterruptedException {
-        System.out.println("firefox execution");
+        System.out.println("TEST firefox execution");
     }
 }
