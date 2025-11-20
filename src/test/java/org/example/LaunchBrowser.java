@@ -4,24 +4,38 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class LaunchBrowser {
-    @Test(testName = "chrome", groups = {"positive"})
-    public void browserLaunch() throws InterruptedException {
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://demo.evershop.io/");
-        //Thread.sleep(5000);
-        driver.findElement(By.xpath("//a[text()='SHOP NOW']")).click();
-        //Thread.sleep(5000);
-        driver.quit();
+
+
+    @BeforeClass
+    public void beforeClass(){
+        System.out.println("Before Class");
     }
 
-    @Test(testName = "chrome", groups = {"positive"})
+    @AfterClass
+    public void afterClass(){
+        System.out.println("After Class");
+    }
+
+    @BeforeMethod
+    public void beforeMethod() {
+        System.out.println("Before Method");
+    }
+
+    @AfterMethod
+    public void afterMethod() {
+        System.out.println("After Method");
+    }
+
+    @Test(testName = "chrome")
+    public void browserLaunch() throws InterruptedException {
+        System.out.println("chrome execution");
+    }
+
+    @Test(testName = "chrome")
     public void browserLaunchFirefox() throws InterruptedException {
-        WebDriver driver = new FirefoxDriver();
-        driver.get("https://www.google.com");
-        //Thread.sleep(10000);
-        driver.quit();
+        System.out.println("firefox execution");
     }
 }
