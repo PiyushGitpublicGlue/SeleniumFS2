@@ -1,14 +1,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Selenium Suite" verbose="1">
+<suite name="Selenium Suite" parallel="classes" thread-count="1">
     <test name="Smoke Tests">
         <groups>
             <run>
-                <include name="Smoke"/>
+                <include name="positive"/>
             </run>
         </groups>
         <classes>
-            <class name="org.example.LaunchBrowser">
-            </class>
+            <class name="org.example.LaunchBrowser2"/>
         </classes>
     </test>
 </suite>
