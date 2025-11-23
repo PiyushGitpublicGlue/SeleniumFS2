@@ -59,12 +59,12 @@ public class LaunchBrowser {
         System.out.println("After Method");
     }
 
-    @Test(testName = "chrome", groups = {"Smoke"})
+    @Test(testName = "chrome", groups = "Smoke", priority = 1)
     public void browserLaunch() throws InterruptedException {
         System.out.println("TEST chrome execution");
     }
 
-    @Test(testName = "safari", groups = {"Regression"})
+    @Test(testName = "safari", groups = {"Smoke"}, priority = 0)
     public void browserLaunchSafari() throws InterruptedException {
         System.out.println("TEST safari execution");
     }
