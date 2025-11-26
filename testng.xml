@@ -7,7 +7,7 @@
             </run>
         </groups>
         <classes>
-            <class name="org.example.LaunchBrowser2"/>
+            <class name="org.example.LaunchBrowser3"/>
         </classes>
     </test>
 </suite>

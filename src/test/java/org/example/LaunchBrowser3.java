@@ -18,7 +18,7 @@ public class LaunchBrowser3 {
         driver.quit();
     }
 
-    @Test(testName = "chrome", groups = {"positive"})
+    @Test(testName = "chrome", groups = {"Negative"})
     public void browserLaunchFirefox() throws InterruptedException {
         WebDriver driver = new FirefoxDriver();
         driver.get("https://www.google.com");
